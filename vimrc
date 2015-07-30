@@ -18,6 +18,8 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set nu
 colorscheme hybrid
 
-let g:SuperTabRetainCompletionType=2
-let g:SuperTabDefaultCompletionType="context"
+"let g:SuperTabRetainCompletionType=2
+"let g:SuperTabDefaultCompletionType="context"
  
+"let g:neocomplete#enable_at_startup = 1
+
