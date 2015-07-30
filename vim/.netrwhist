@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/bin'
+let g:netrw_dirhist_2='/'
+let g:netrw_dirhist_3='/home'
+let g:netrw_dirhist_4='/'
+let g:netrw_dirhist_5='/Users'
+let g:netrw_dirhist_6='/Users/a111'
+let g:netrw_dirhist_7='/Users/a111/mls'
