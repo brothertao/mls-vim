@@ -13,6 +13,7 @@ set magic
 syntax on
 
 set smarttab
+set noswapfile
 set tabstop=4
 set expandtab
 set shiftwidth=4
