@@ -6,12 +6,13 @@ set incsearch
 set backspace=indent,eol,start
 
 "Highlight search things
-"set hlsearch
+set hlsearch
 "
 ""Set magic on regx
 set magic
 syntax on
 
+set viminfo='1000,:1000,<1000,@1000,f1000,%
 set smarttab
 set noswapfile
 set tabstop=4
@@ -20,6 +21,7 @@ set shiftwidth=4
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set nu
 colorscheme hybrid
+
 
  
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
@@ -108,3 +110,15 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 let g:airline#extensions#tabline#enabled = 1
 
+" restore last cursor position
+function! ResCur()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
